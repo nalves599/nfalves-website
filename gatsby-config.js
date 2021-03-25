@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: "Nuno Alves Website",
+    title: "Nuno Francisco Alves",
+    shortTitle: "Nuno Alves",
+    description:
+      "Hey, I'm Nuno Francisco Alves a computer science student with a deep love into programming.",
+    author: "@nalves599",
+    siteUrl: "https://nfalves.com",
   },
   plugins: [
     "gatsby-plugin-styled-components",
@@ -23,6 +28,13 @@ module.exports = {
         path: "./src/images/",
       },
       __key: "images",
+    },
+    {
+      resolve: "gatsby-plugin-google-fonts",
+      options: {
+        fonts: ["Montserrat:300,400,500,700", "Roboto"],
+        display: "swap",
+      },
     },
     {
       resolve: "gatsby-source-filesystem",
